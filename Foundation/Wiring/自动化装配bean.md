@@ -31,6 +31,8 @@ basePackages参数使用的是类名字符串，并不是type-safe的。可以�
 
 参数 **required** 为false时，没有满足依赖关系的bean存在时，Spring不进行装配，使需要装配的bean处于未装配状况。此时需谨慎对待可能出现的null情况。
 
+@Inject注解很大程度上与@Autowired注解有类似的作用。
+
 ---
 
 ### 自动扫描示例
