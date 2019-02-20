@@ -7,7 +7,7 @@ Spring从两个角度来实现自动化装配：
 
 ---
 
-### Spring自动装配关键字
+### JavaConfig配置自动装配
 
 使用 **@Component** 注解修饰的类会被Spring识别为一个组件类，Spring会为其创建bean。  
 
@@ -32,6 +32,12 @@ basePackages参数使用的是类名字符串，并不是type-safe的。可以�
 参数 **required** 为false时，没有满足依赖关系的bean存在时，Spring不进行装配，使需要装配的bean处于未装配状况。此时需谨慎对待可能出现的null情况。
 
 @Inject注解很大程度上与@Autowired注解有类似的作用。
+
+---
+
+### XML自动装配
+
+使用***<<context:component-scan>>***元素，属性base-package为自动扫描基础包名字符串。
 
 ---
 
